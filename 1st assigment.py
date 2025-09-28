@@ -142,7 +142,7 @@ def simulate_battle(pokemon1, pokemon2):
 if __name__ == "__main__":
 	# 1. Loading Pokémon dataset
 	pokemons = load_data(
-		#"C:/Users/HP/Desktop/Felix Ochieng/CS/Felix Ochieng/Python/Data Analysis and Visualization/Assignment 1/Pokemon.csv")
+	
         "C:/Data analysis & visualisation/1st-assignment/Pokemon.csv")
 	# 2. Grouping Pokémon by type (dictionary usage)
 	type_groups = group_by_type(pokemons)
@@ -152,4 +152,5 @@ if __name__ == "__main__":
 	# 3. Simulating a battle between two Pokémon
 	winner = simulate_battle(pokemons[3], pokemons[
 		6])  # Example: 4th vs 7th Pokémon in dataset
+
 	print("🏆 Winner:", winner)
